@@ -1,0 +1,28 @@
+# Tabla de hechos 
+FACT_PRESTAMOS
+Metricas: 
+* Cuotas 
+* Dias de mora 
+Claves: 
+* cliente 
+* producto
+* canal 
+* score 
+* estado del credito 
+* provincia 
+* fechas (otorgamiento/ desembolso)
+
+# Dimensiones bien definindas 
+*DIM_CLIENTES (perfil + geografía)
+
+*DIM_PRODUCTO
+
+*DIM_CANAL_SOLICITUD
+
+*DIM_ESTADO (estado crediticio)
+
+*DIM_SCORE
+
+*DIM_PROVINCIA
+
+*TABLA_CALENDARIO
