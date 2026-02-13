@@ -1,5 +1,4 @@
-# Analisis-Mora-Crediticia-2020-2021
-Dashboard interactivo en Power BI sobre la evolución de la morosidad y riesgo crediticio en Argentina (2020-2021)
+
 
 # Análisis de Riesgo Crediticio y Morosidad en Escenarios de Estrés (2020–2021)
 
@@ -18,16 +17,6 @@ El análisis busca identificar patrones de riesgo, segmentar clientes y evaluar 
 * Analizar la concentración geográfica y por canal de la morosidad.
 * Brindar insights que puedan apoyar la gestión de cartera de crédito.
 
----
-# Estructura de los datos
-
-El dataset contiene información de aproximadamente 2.000 créditos, incluyendo variables:
-
-* Demográficas (edad, género)
-* Geográficas (provincia, ciudad)
-* Crediticias (score crediticio, estado de mora)
-* Temporales (año y mes)
-* De negocio (línea de crédito, canal de solicitud)
 
 ---
 # Enfoque analítico
@@ -39,18 +28,6 @@ El proyecto prioriza el pensamiento analítico por sobre la complejidad técnica
 * Comparación por canal de originación, producto y región.
 * Análisis temporal para identificar tendencias y picos de riesgo.
 
----
-# Modelado de datos
-
-Se diseñó un modelo estrella utilizando Power Query y Power BI, separando:
-
-* Tabla de hechos de morosidad
-* Dimensiones de:
-  * Tiempo
-  * Cliente
-  * Producto
-  * Canal
-  * Geografía
 
 ---
 # Herramientas utilizadas
@@ -61,7 +38,23 @@ Se diseñó un modelo estrella utilizando Power Query y Power BI, separando:
 * Análisis exploratorio de datos (EDA)
 
 ---
-# Conclusiones generales
+# Principales insights y recomendaciones
 
-El análisis muestra que, durante los años 2020–2021, la morosidad presenta una alta concentración en tramos de atraso severos, lo que indica un riesgo elevado de pérdida.
-Asimismo, se observan diferencias relevantes según canal, región y producto, lo que sugiere oportunidades para políticas de crédito diferenciadas.
+* Concentración de mora en tramos > 90 días:
+  
+     Se identifica que una parte relevante del monto en mora se concentra en atrasos severos, indicando riesgo elevado de incobrabilidad. **Recomendación**: reforzar alertas tempranas y acciones preventivas antes de los 60 días de atraso.
+* Impacto del contexto 2020–2021 en la morosidad:
+
+  El período analizado muestra niveles elevados de morosidad asociados a un contexto económico adverso. **Recomendación**: utilizar estos datos como escenario de stress testing y ajustar criterios de otorgamiento.
+* Mejora interanual en la cantidad de clientes en mora:
+
+  Se observa una reducción de clientes morosos respecto al año anterior. **Recomendación**: replicar prácticas de originación y gestión que mostraron mejor desempeño.
+* Diferencias de riesgo por producto y línea de crédito:
+
+  Algunas líneas concentran mayor proporción de cartera vencida.**Recomendación**: revisar condiciones de otorgamiento y límites crediticios por producto.
+* Concentración geográfica del riesgo:
+
+  La morosidad no se distribuye de forma homogénea entre regiones.**Recomendación**: ajustar políticas de crédito considerando variables geográficas.
+
+
+  
