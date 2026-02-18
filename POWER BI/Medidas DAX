@@ -20,3 +20,22 @@ TABLA CALENDARIO = ADDCOLUMNS(
     "Trimeste", "T" & FORMAT([Date],"Q"),
     "DIA",DAY(([Date])
 ))
+
+AHORRO ESTIMADO = [Monto riesgo alto]*0.20
+
+% INDICE DE MORA = DIVIDE([MONTO EN MORA],[MONTO TOTAL],0)
+
+Color Alerta Forecast = 
+e
+VAR UmbralPorcentaje = 0.50 
+VAR PorcentajeActual = [% INDICE DE MORA] 
+RETURN
+    IF (
+        ISBLANK(PorcentajeActual), 
+        "#D3D3D3", -- Gris
+        IF (
+            PorcentajeActual >= UmbralPorcentaje, 
+            "#FF0000", -- Rojo (Peligro)
+            "#00B050"  -- Verde (Bajo control)
+        )
+    )
