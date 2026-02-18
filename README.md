@@ -69,7 +69,7 @@ El proyecto prioriza el pensamiento analítico por sobre la complejidad técnica
   * **Resultado**: Identifiqué un Ahorro Potencial de $4.65 millones, permitiendo al área de riesgos visualizar el beneficio económico de endurecer las políticas de admisión.
 
   ---
-  # Conclusiones y Propuesta de Valor:
+  # Propuestas de Valor:
 
   * **Identificación de Riesgo**: El segmento "Cliente Bajo" posee un índice de morosidad del 51.4%, lo que requiere una acción de mitigación inmediata.
   * **Estrategia recomendada** : Utilizar el forecast semestral como ventana de oportunidad para ajustar los límites de crédito en los sectores de mayor riesgo.
@@ -88,6 +88,16 @@ El proyecto prioriza el pensamiento analítico por sobre la complejidad técnica
 * ** Obejetivo** : Al disminuir la exposición financiera por cliente, el impacto económico en caso de impago es significativamente menor, materializando el Ahorro Estimado de $8.3 M.
 
 3. ** Implementación de un Sistema de "Alerta Temprana"**:
-* ** La Acción** : Usar el Forecast de 6 meses para disparar campañas de cobranza preventiva.
+* **La Acción** : Usar el Forecast de 6 meses para disparar campañas de cobranza preventiva.
 * Dado que el forecast identifica meses con tendencias alcistas, el área de cobranzas puede iniciar contactos recordatorios con los clientes de Score Regular/Bajo antes de que venzan sus cuotas en esos periodos críticos.
 * **Objetivo** : Adelantarse a la curva de impago proyectada, utilizando los datos predictivos para optimizar el esfuerzo del equipo de operaciones de cobranza.
+
+ **Sistema de Alerta Temprana**: He implementado reglas de formato condicional que actúan como un semáforo de riesgo. El sistema resalta automáticamente en rojo los segmentos donde el índice de morosidad supera los límites permitidos, permitiendo a los gerentes de riesgo identificar focos de pérdida de un solo vistazo. Lo cual tambien significara que es una señal automatica para el equipo de cobranzas de que este grupo requiere intervención prioritaria.
+
+ ---
+ # Conclusión: Impacto y Valor de Negocio:
+ Este proyecto demuestra cómo la analítica de datos transforma un reporte estático en una herramienta de gestión de riesgos proactiva. A través de la implementación de modelos de forecasting y sistemas de alerta, se han obtenido los siguientes resultados clave:
+ 1. **Visibilidad Preventiva mediante Forecasting** : El análisis no se limita a describir la mora pasada, sino que proyecta el riesgo a corto plazo (6 meses). Esta ventana de tiempo es fundamental para la toma de decisiones ágiles, permitiendo que la organización se anticipe a picos de morosidad antes de que afecten el flujo de caja.
+ 2. **Automatización de Decisiones (Sistema de Alerta)** : Se diseñó e implementó un Semáforo de Riesgo Dinámico. Este sistema identifica nívele críticos , permitiendo que el equipo de cobranzas priorice sus esfuerzos en donde el sémaforo indica "alerta crítica", pasando de una gestión reactiva a una estrategia de cobranza preventiva.
+ 3. Impacto Financiero Tangible: La capacidad de identificar y mitigar el riesgo en los segmentos de mayor exposición proyecta un ahorro potencial de $8.3 millones. Este dato convierte el análisis de datos en un activo financiero directo para la empresa, protegiendo el capital y mejorando la calidad de la cartera crediticia.
+ 
